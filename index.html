@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<title>Christina Adams</title>
+
+<head>
+ <link href="https://fonts.googleapis.com/css?family=Instrument+Sans" rel="stylesheet">
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ body {
+  flex-direction: column;
+  background-color: #ffD1F8;
+  font-family: 'Instrument Sans';
+  font-size: 20px;
+  padding: 0px;
+ }
+ h1 {
+  margin-top: 0px;
+  font-size: 36px;
+  color: #ff8BED; 
+  font-family: 'Instrument Sans';
+ }
+ h3 {
+  font-size: 24px;
+  color: #ca56B8; 
+  font-family: 'Instrument Sans';
+ }
+ h2 {
+  margin-right: 50px;
+  margin-left: 50px;
+  font-size: 28px;
+  color: black; 
+  font-family: 'Instrument Sans'; }
+ h4 {
+  margin-right: 50px;
+  margin-left: 50px;
+  color: black; 
+  font-family: 'Instrument Sans'; }
+ p {
+  margin-right: 50px;
+  margin-left: 50px;
+  color: black; 
+  font-family: 'Instrument Sans';
+  font-size: 20px;
+ }
+
+
+ .section1 {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 50px;
+  background-color: black;
+ }
+
+    #first {
+      height: 250px;
+    }
+    #middle {
+      height: 250px;
+    }
+    #middleVer2 {
+      height: 250px;
+      width: 250px;
+    }
+    #second {
+      height: 250px;
+      width: 250px;
+    }
+
+  @media (min-width: 1000px) {
+    .section1 {
+      flex-direction: row;  /* Divs side by side */
+      height: 250px;
+    }
+    #second {
+      float: right;
+      width: 250px;
+    }
+    #middle {
+      display: none;
+    }
+    #middleVer2 {
+      float: right;
+      line-height: 60px;
+      flex-direction: row;
+      align-items: center;
+      text-align: center;
+      line-height: 1;
+    }
+    #first {
+      float: left;
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .section1 {
+      flex-direction: column;  /* Stack divs */
+      align-items: center;
+      height: 570px;
+    }
+    #second {
+      order: -2;
+      align-items: center;
+    }
+    #middle {
+      flex-direction: row;
+      align-items: center;
+    }
+    #middleVer2 {
+      display: none;
+    }
+    #first {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+ .section2 {
+  background-color: #ffD1F8;
+ }
+
+ #list_o_stuff {
+  margin-right: 50px;
+  margin-left: 90px;
+  color: black;
+  font-family: 'Instrument Sans'; 
+ }
+</style>
+</head>
+ 
+<body>
+
+  <div class="section1">
+    <div id="first">
+      <h3><small>Hi, my name is</small></h1>
+      <h1>Christina Adams</h1>
+      <h3 style="font-size:20px"><small>Thank you for visiting my personal website! I am a current
+      <br>undergraduate student at the University of Michigan, majoring in
+      <br>Computer Science and English.</small></h3>
+      <br>
+    </div>
+    <div id="second">
+      <a href="index.html">
+        <img src="photos/profile-pic/IMG_2932.jpg" alt="Christina Adams" width="230" height="230">
+      </a>
+    </div>
+    <div id="middle">
+      
+        <p style="font-size:14px; color:#ffD1F8"><small>My LinkedIn Page! &rarr;<span style="color:black">_
+        <a href="https://www.linkedin.com/in/christina-adams1/">
+          <img src="photos/IMG_3166.jpg" alt="LinkedIn" width="30" height="30"></a>_
+        <a href="https://docs.google.com/document/d/1z2FXix8S2Gnzdohuhs99tbwUKOkyUpp8/edit?usp=sharing&ouid=111452060849904323668&rtpof=true&sd=true">
+          <img src="photos/IMG_3168.jpg" alt="Résumé" width="30" height="30">
+        </a>
+        _</span>&larr; My Résumé!</small></p>
+    </div>
+    <div id="middleVer2">
+      <br>
+      <div>
+        <a href="https://www.linkedin.com/in/christina-adams1/">
+          <img src="photos/IMG_3166.jpg" alt="LinkedIn" width="30" height="30">
+        <p style="color:#ffD1F8"><small>My LinkedIn Page!</small></p></a>
+      </div>
+      <br>
+      <div>
+        <a href="https://docs.google.com/document/d/1z2FXix8S2Gnzdohuhs99tbwUKOkyUpp8/edit?usp=sharing&ouid=111452060849904323668&rtpof=true&sd=true">
+          <img src="photos/IMG_3168.jpg" alt="Résumé" width="30" height="30">
+        <p style="color:#ffD1F8"><small>My Résumé!</small></p></a>
+      </div>
+    </div>
+    <br>
+  </div>
+ 
+  <div class="section2">
+    <br>
+    <br>
+    <h2>About Me</h2>
+    <p style="font-size:20px"><small>I am currently in my fourth year at the University of Michigan, and I will be graduating in Fall 2025. I declared an English major in Fall 2023, and declared Computer
+    Science as a double major in Fall 2024. I had my first coding experience when I enrolled in EECS 183, Elementary Programming, in Winter 2024 after completing the
+    requirements for my English major. I thoroughly enjoyed the course and felt motivated to pursue Computer Science alongside my existing English major. While
+    taking EECS 183, I had the opportunity to participate in the EECS 183 Showcase at the end of the semester, where my groupmates and I shared our work on making
+    an automated player to a strategic game named <i>Elevators</i>. We were given a showcase award for our work, and I was further motivated to pursue a career in programming.</small></p>
+    <p style="font-size:20px"><small>Because I discovered my passion for programming in the second semester of my junior year, I started out a little behind my peers. This led me to fast-track my progress toward the Computer Science major, so I
+    completed EECS 280: Programming and Intro Data Structures and EECS 203: Discrete Math (the introductory courses for UMich EECS) over the spring semester of 2024 and just recently completed EECS 281: Data Structures and Algorithms and EECS 376: Foundations of Computer Science during the semester of Fall 2024.
+    I am now taking courses in web systems, user interface development, and computer organization for the Winter 2025 semester, which will allow me to graduate in the
+    Fall of 2025. </small></p>
+    <p style="font-size:20px"><small>I am hoping to participate in a software engineering internship during the summer of 2025, and I am actively seeking positions!
+    <br>Thank you again for visiting my website,
+    <br>Please contact me at chriada(at)umich(dot)edu with any concerns.
+    <br>Thank you!</small></p>
+
+    <br>
+    <h2>Coursework<i><small><small> at The University of Michigan</small></small></i></h2>
+    <div id="list_o_stuff">
+      <b><u>EECS 485:</u></b> Web Systems<br>
+        <p style="font-size: 18px; margin-left: 30px">Project-based course practicing the use of HTML, CSS, Python, JavaScript, etc. Course material prioritizes learning both front and back end web system technologies. The first half of the course features an Instagram-esque project, and the second half has a search engine project.
+          <a href="https://eecs485.org/syllabus.html">Click here for more information on this course!</a>
+        </p>
+      <b><u>EECS 493:</u></b> User Interface development<br>
+        <p style="font-size: 18px; margin-left: 30px">Course centered around a team project (of the team's choice, typically some sort of social or personal application) due at the end of the semester. Course materials work with HTML, CSS, JavaScript, and more. Research and attention to users' perspectives is emphasized
+          <a href="https://eecs493staff.github.io/eecs493.org/syllabus.html">Click here for more information on this course!</a>
+        </p>
+      <b><u>EECS 370:</u></b> Intro to Computer Orgnanization<br>
+        <p style="font-size: 18px; margin-left: 30px">Project-based course teaching the back-end actions of computers and how computers interact with low-level languages. The course works primarily with the language C when needed.
+          <!--<a href="">Click here for more information on this course!</a> NOTE: no public syllabus available-->
+        </p>
+      <b><u>EECS 376:</u></b> Foundations of Computer Science<br>
+        <p style="font-size: 18px; margin-left: 30px">Assignment-based course on Computer Science theory. Many of the course's topics seek to analyze complex algorithms and to explain why those algorithms are complex. 
+          <a href="https://eecs376.org/syllabus.html">Click here for more information on this course!</a>
+        </p>
+      <b><u>EECS 281:</u></b> Data Structures and Algorithms<br>
+        <p style="font-size: 18px; margin-left: 30px">Project-based course covering fundamental algorithms and their uses. The course also focuses heavily on the optimization of programs, for both memory and runtime. The course uses C++ exclusively.
+          <a href="https://eecs281staff.github.io/eecs281.org/syllabus.html">Click here for more information on this course!</a>
+        </p>
+    </div>
+
+   
+    <br>
+    <h2>Projects</h2>
+    <div id="list_o_stuff">
+      <b>This Website!</b><br>
+        <p style="font-size: 18px; margin-left: 30px">I wrote the HTML, CSS, etc. for this website from scratch! (No templates were used)</p>
+      <b>Playable Card Game "Euchre"</b><br>
+        <p style="font-size: 18px; margin-left: 30px">The infamous course project for EECS 280 featuring the implementation of the popular (in Michigan) card game "Euchre" in C++.</p>
+      <b>Instagram-Clone</b><br>
+        <p style="font-size: 18px; margin-left: 30px">The second project for EECS 485: Web Systems. Used HTML, CSS, Python, and SQL database. Implemented user pages and interactive elements expected of typical social media platforms (follow, like, comment, post, etc).</p>
+      <b>And many more!</b><br>
+    </div>
+    <br> <br> <br> <br>
+  </div>
+
+ 
+</body>
+</html>
