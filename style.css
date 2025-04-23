@@ -1,0 +1,167 @@
+body {
+    flex-direction: column;
+    background-color: #ffD1F8;
+    font-family: 'Instrument Sans';
+    font-size: 20px;
+    padding: 0px;
+}
+h1 {
+    margin-top: 0px;
+    font-size: 36px;
+    color: #ff8BED; 
+    font-family: 'Instrument Sans';
+}
+h3 {
+    font-size: 22px;
+    color: #ca56B8; 
+    font-family: 'Instrument Sans';
+}
+h2 {
+    margin-right: 50px;
+    margin-left: 50px;
+    font-size: 28px;
+    color: black; 
+    font-family: 'Instrument Sans';
+}
+h4 {
+    margin-right: 50px;
+    margin-left: 50px;
+    color: black; 
+    font-family: 'Instrument Sans';
+}
+p {
+    margin-right: 50px;
+    margin-left: 50px;
+    color: black; 
+    font-family: 'Instrument Sans';
+    font-size: 20px;
+}
+  
+  
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 50px;
+    background-color: black;
+}
+  
+
+#bio { 
+    height: 250px;
+}
+#links {
+    height: 250px;
+}
+#linksVer2 {
+    height: 250px;
+    width: 250px;
+}
+#profilePic {
+    height: 250px;
+    width: 250px;
+}
+  
+    @media (min-width: 1121px) {
+      .section1 {
+        flex-direction: row;  /* Divs side by side */
+        height: 250px;
+      }
+      #profilePic {
+        float: right;
+        width: 250px;
+      }
+      #links {
+        display: none;
+      }
+      #linksVer2 {
+        float: right;
+        line-height: 60px;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        line-height: 1;
+      }
+      #bio {
+        float: left;
+      }
+    }
+  
+    @media (max-width: 1120px) {
+      .section1 {
+        flex-direction: column;  /* Stack divs */
+        align-items: center;
+        height: 570px;
+      }
+      #profilePic {
+        order: -2;
+        align-items: center;
+      }
+      #links {
+        flex-direction: row;
+        align-items: center;
+      }
+      #linksVer2 {
+        display: none;
+      }
+      #bio {
+        align-items: center;
+        text-align: center;
+      }
+    }
+  
+.section2 {
+    background-color: #ffD1F8;
+   }
+  
+#list_o_stuff {
+    margin-right: 50px;
+    margin-left: 90px;
+    color: black;
+    font-family: 'Instrument Sans'; 
+}
+
+#newsletter_section {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.newsletterParagraph {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.courseAndProjectParagraphs {
+    font-size: 18px;
+    margin-left: 30px;
+}
+
+#linksText {
+    font-size: 12px;
+    color:#ffD1F8
+}
+
+.linksVer2Text {
+    font-size: 17px;
+    color:#ffD1F8
+}
+
+#bioText {
+    font-size: 17px;
+    color: #ca56B8; 
+    font-family: 'Instrument Sans';
+}
+
+#cwSubtext {
+    color: black; 
+    font-family: 'Instrument Sans';
+    font-size: 20px;
+}
+
+.aboutMeText {
+    font-size: 17px;
+}
